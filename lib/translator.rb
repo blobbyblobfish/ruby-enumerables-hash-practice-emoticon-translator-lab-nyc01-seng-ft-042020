@@ -33,7 +33,7 @@ def get_english_meaning(file_path, japanese_emoji)
   hash = load_library(file_path)
   
   hash.each do |meaning, emoticons| 
-    if hash[meaning][:japanese] == japanese_emoji 
+    if emoticons[:japanese] == japanese_emoji 
       return hash[meaning]
       
     end
